@@ -148,7 +148,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background: url('/logo_image.jpg') no-repeat center center/cover;
+  background: url('/NowaStronaWWW/images/logo_image.jpg') no-repeat center center/cover;
   color: white;
   padding: 8rem 0;
   text-align: center;
@@ -447,7 +447,7 @@ body {
   }
 
   .hero h2 {
-    font-size: clamp(2.5rem, 4vw + 1rem, 4rem);
+    font-size: clamp(2rem, 4vw + 1rem, 4rem);
   }
 
   .hero p {
@@ -460,17 +460,24 @@ body {
     height: 300px;
   }
 
-   .prev, .next {
+  .prev, .next {
     display: none;
+  }
+
+  .contact-button {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-top: 20px;
   }
 
   .btn-primary {
     font-size: 0.9rem;
     padding: 0.6rem 1.5rem;
-    position: relative;
-    margin-top: 20rem; /* Dodatkowy odstęp */
+    transform: translateY(80px);
   }
 }
+
+
 
 /* Dla starszych przeglądarek */
 @supports not (backdrop-filter: blur(5px)) {
