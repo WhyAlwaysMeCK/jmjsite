@@ -459,6 +459,10 @@ body {
     box-shadow: 0 8px 15px rgba(255, 102, 0, 0.3);
     height: 300px;
   }
+
+   .prev, .next {
+    display: none;
+  }
 }
 
 /* Dla starszych przeglądarek */
