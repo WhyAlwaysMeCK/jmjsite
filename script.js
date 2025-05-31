@@ -29,6 +29,26 @@ document.addEventListener("click", (e) => {
   }
 });
 
+// ======= Płynne przewijanie do sekcji =======
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", (e) => {
+    e.preventDefault();
+    const target = document.querySelector(anchor.getAttribute("href"));
+    if (target) {
+      const headerHeight = document.querySelector(".header").offsetHeight;
+      const targetPosition =
+        target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth",
+      });
+
+      closeMenu(); // Zamknięcie menu mobilnego po kliknięciu
+    }
+  });
+});
+
 // ======= Karuzela + Kafelki wskaźników =======
 document.addEventListener("DOMContentLoaded", function () {
   const track = document.querySelector(".carousel-track");
