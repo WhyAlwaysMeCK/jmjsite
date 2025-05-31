@@ -465,32 +465,10 @@ body {
   }
 
   .btn-primary {
-    font-size: 1rem;         /* zmniejszamy rozmiar czcionki */
-    padding: 0.6rem 1.5rem;  /* mniejsze paddingi */
-    margin-bottom: 2.5rem;   /* większy odstęp od dołu */
-  }
-}
-
-@media (max-width: 486px) {
-  .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: 6rem; /* zwiększone miejsce na dół */
-    min-height: 450px; /* minimalna wysokość hero */
+    font-size: 0.9rem;
+    padding: 0.6rem 1.5rem;
     position: relative;
-  }
-
-  .hero .btn-primary {
-    align-self: center;
-    font-size: 0.85rem;
-    padding: 0.5rem 1.2rem;
-    margin-top: auto;
-    margin-bottom: 1.5rem;
-    width: fit-content;
-    background: rgba(255, 102, 0, 0.9); /* półprzezroczyste tło */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    border: none;
+    margin-top: 20rem; /* Dodatkowy odstęp */
   }
 }
 
