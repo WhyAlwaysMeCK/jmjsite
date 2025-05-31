@@ -148,7 +148,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background: url('/NowaStronaWWW/images/logo_image.jpg') no-repeat center center/cover;
+  background: url('/logo_image.jpg') no-repeat center center/cover;
   color: white;
   padding: 8rem 0;
   text-align: center;
