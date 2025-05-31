@@ -471,6 +471,25 @@ body {
   }
 }
 
+@media (max-width: 486px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 4rem; /* więcej miejsca na dół */
+    min-height: 400px; /* opcjonalnie, by hero miało trochę wysokości */
+  }
+
+  .hero .btn-primary {
+    align-self: center;       /* wyśrodkowanie przycisku */
+    font-size: 0.9rem;        /* mniejsza czcionka */
+    padding: 0.5rem 1.2rem;   /* mniejszy padding */
+    margin-top: auto;         /* przesuwa przycisk na dół */
+    margin-bottom: 1.5rem;    /* odstęp od dołu hero */
+    width: fit-content;       /* dopasowanie szerokości do zawartości */
+  }
+}
+
 /* Dla starszych przeglądarek */
 @supports not (backdrop-filter: blur(5px)) {
   .header {
