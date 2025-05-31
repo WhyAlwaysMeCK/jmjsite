@@ -148,7 +148,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background: url('/logo_image.jpg') no-repeat center center/cover;
+  background: url('/NowaStronaWWW/images/logo_image.jpg') no-repeat center center/cover;
   color: white;
   padding: 8rem 0;
   text-align: center;
@@ -234,8 +234,8 @@ body {
 }
 
 .lista-ofert li {
-  background-color: #fff3e0; /* delikatny jasny pomarańcz */
-  border-left: 6px solid #ff6600; /* akcentujący pasek po lewej */
+  background-color: #fff3e0; 
+  border-left: 6px solid #ff6600; 
   padding: 1.5rem 1.5rem 1.5rem 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(255, 102, 0, 0.2);
@@ -243,10 +243,12 @@ body {
   color: #333;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: default;
+  opacity: 1 !important;
+  display: block !important;
 }
 
 .lista-ofert li:hover {
-  transform: translateY(-6px);
+  transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(255, 102, 0, 0.35);
 }
 
@@ -309,6 +311,29 @@ body {
 
 .prev { left: 20px; }
 .next { right: 20px; }
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background: #ff6600;
+}
+
 
 /* Opinie */
 .opinie-slider {
