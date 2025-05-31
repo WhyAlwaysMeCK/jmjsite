@@ -463,6 +463,12 @@ body {
    .prev, .next {
     display: none;
   }
+
+  .btn-primary {
+    font-size: 1rem;         /* zmniejszamy rozmiar czcionki */
+    padding: 0.6rem 1.5rem;  /* mniejsze paddingi */
+    margin-bottom: 2.5rem;   /* większy odstęp od dołu */
+  }
 }
 
 /* Dla starszych przeglądarek */
