@@ -476,17 +476,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 4rem; /* więcej miejsca na dół */
-    min-height: 400px; /* opcjonalnie, by hero miało trochę wysokości */
+    padding-bottom: 6rem; /* zwiększone miejsce na dół */
+    min-height: 450px; /* minimalna wysokość hero */
+    position: relative;
   }
 
   .hero .btn-primary {
-    align-self: center;       /* wyśrodkowanie przycisku */
-    font-size: 0.9rem;        /* mniejsza czcionka */
-    padding: 0.5rem 1.2rem;   /* mniejszy padding */
-    margin-top: auto;         /* przesuwa przycisk na dół */
-    margin-bottom: 1.5rem;    /* odstęp od dołu hero */
-    width: fit-content;       /* dopasowanie szerokości do zawartości */
+    align-self: center;
+    font-size: 0.85rem;
+    padding: 0.5rem 1.2rem;
+    margin-top: auto;
+    margin-bottom: 1.5rem;
+    width: fit-content;
+    background: rgba(255, 102, 0, 0.9); /* półprzezroczyste tło */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: none;
   }
 }
 
